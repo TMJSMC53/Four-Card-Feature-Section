@@ -1,0 +1,117 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-red: 0 78% 62%;
+  --clr-teal: 180 62% 55%;
+  --clr-orange: 34 97% 64%;
+  --clr-blue: 212 86% 64%;
+  --clr-black: 234 12% 34%;
+
+  --clr-dkBlue: 234 12% 34%;
+  --clr-grayish-blue: 229 6% 66%;
+  --clr-light-gray: 0 0% 98%;
+
+  /* font sizes */
+  --fs-700: 2.25rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 0.875rem;
+  --fs-200: 0.8125rem;
+
+  /* font family */
+  --ff-sans: "Poppins", sans-serif;
+}
+
+@media (min-width: 35em) {
+  :root {
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.8125rem;
+  }
+}
+
+@media (min-width: 45em) {
+  :root {
+    /* font-sizes */
+    --fs-700: 2.25rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.8125rem;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* typography */
+
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
